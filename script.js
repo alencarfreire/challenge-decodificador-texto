@@ -7,6 +7,7 @@ function adjustStyle() {
   afterResult.style.display = "none";
   buttonCopy.style.display = "block";
   boxResult.style.justifyContent = "space-between";
+  outputText.style.display = "block";
   outputText.style.height = "80%";
 }
 

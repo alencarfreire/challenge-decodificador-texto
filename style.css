@@ -98,6 +98,7 @@ textarea::placeholder {
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .box-result textarea,
@@ -110,6 +111,7 @@ textarea::placeholder {
   color: #495057;
   font-size: 1.5rem;
   margin: 2rem;
+  display: none;
 }
 
 .after-result {
@@ -133,6 +135,7 @@ textarea::placeholder {
   line-height: 150%;
   margin: 2rem;
   width: 80%;
+  display: none;
 }
 
 .button-copy {
@@ -154,6 +157,7 @@ textarea::placeholder {
     width: 100%;
     height: 100%;
     margin: 0;
+    gap: 2rem;
   }
   .box-insert-text {
     width: 100%;
@@ -164,7 +168,14 @@ textarea::placeholder {
   .box-insert-text textarea,
   .box-insert-text textarea:focus {
     width: 100%;
-    height: 34.25rem;
+    height: 28rem;
+  }
+  .box-result {
+    width: 100%;
+    height: 40%;
+  }
+  .ilustration {
+    display: none;
   }
 }
 
