@@ -181,4 +181,15 @@ textarea::placeholder {
 
 /* Media query para 375px */
 @media (max-width: 375px) {
+  main {
+    width: 23rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  .box-insert-text-submit-buttons {
+    flex-wrap: wrap;
+  }
+  .box-insert-text-submit-info {
+    font-size: 0.75rem;
+  }
 }
