@@ -14,15 +14,16 @@ html {
 }
 
 main {
-  width: 90rem;
-  height: 100vh;
+  max-width: 90rem;
+  max-height: 100vh;
   padding: 2.5rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 5rem;
 }
 .box-insert-text {
-  width: 55rem;
-  height: 100%;
+  max-width: 60%;
+  max-height: 100%;
 }
 
 .box-insert-text-form {
@@ -31,7 +32,7 @@ main {
 
 .box-insert-text textarea,
 .box-insert-text textarea:focus {
-  width: 40rem;
+  max-width: 40rem;
   height: 35rem;
   border: 0 none;
   resize: none;
@@ -91,8 +92,8 @@ textarea::placeholder {
 }
 
 .box-result {
-  width: 25rem;
-  height: 55rem;
+  max-width: 30%;
+  max-height: 55rem;
   border-radius: 2rem;
   background: #fff;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -115,8 +116,13 @@ textarea::placeholder {
 }
 
 .after-result {
+  max-width: 100%;
   padding: 2rem;
   text-align: center;
+}
+
+.ilustration {
+  max-width: 100%;
 }
 
 .box-result-info {
@@ -138,6 +144,10 @@ textarea::placeholder {
   display: none;
 }
 
+.outputText textarea {
+  text-transform: lowercase;
+}
+
 .button-copy {
   padding: 1.5rem;
   border-radius: 1.5rem;
@@ -150,62 +160,38 @@ textarea::placeholder {
   display: none;
 }
 
-/* Media query para 768px */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   main {
-    flex-direction: column;
     width: 100%;
-    height: 100%;
+    justify-content: center;
     margin: 0;
-    gap: 2rem;
+    gap: 4rem;
+    padding: 2rem;
   }
   .box-insert-text {
-    width: 100%;
-  }
-  .box-insert-text-form {
-    margin: 7.25rem 0 0 0;
-  }
-  .box-insert-text textarea,
-  .box-insert-text textarea:focus {
-    width: 100%;
-    height: 28rem;
+    max-width: 100%;
+    padding: 1rem;
   }
   .box-result {
-    width: 100%;
-    height: 40%;
+    max-width: 100%;
+    padding: 2.5rem;
   }
   .ilustration {
     display: none;
   }
+  .box-insert-text-form {
+    margin: 7.25rem 0 0 0;
+  }
 }
 
-
-@media (max-width: 425px) {
-  * {
+@media (max-width: 768px) {
+  .box-insert-text-submit-buttons {
+    flex-wrap: wrap;
     justify-content: center;
   }
-  main {
-    width: 26rem;
-    margin: 0;
-    padding: 2rem;
-  }
-  .box-insert-text-submit-buttons {
-    flex-wrap: wrap;
-  }
-  .box-insert-text-submit-info {
-    font-size: 0.75rem;
-  }
 }
 
-@media (max-width: 375px) {
-  main {
-    width: 23rem;
-    margin: 0;
-    padding: 1rem;
-  }
-  .box-insert-text-submit-buttons {
-    flex-wrap: wrap;
-  }
+@media (max-width: 425px) {
   .box-insert-text-submit-info {
     font-size: 0.75rem;
   }
