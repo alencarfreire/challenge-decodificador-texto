@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +10,7 @@
 body {
   background-color: #f3f5fc;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -159,6 +159,10 @@ textarea::placeholder {
   display: none;
 }
 
+footer {
+  padding-top: 60px;
+}
+
 @media (max-width: 1024px) {
   main {
     flex-direction: column;
@@ -194,6 +198,9 @@ textarea::placeholder {
   .box-result-preview-button-copy {
     padding: 16px;
     font-size: 14px;
+  }
+  footer {
+    padding: 32px;
   }
 }
 
