@@ -1,5 +1,5 @@
 
-# Challenge decodificador texto - ONE | Alura
+# Challenge Decodificador Texto - ONE | Alura
 
 Este é um projeto de um decodificador de texto, desenvolvido como parte de um desafio proposto pela Alura. O objetivo é criar uma aplicação que permita criptografar e descriptografar mensagens de texto.
 
