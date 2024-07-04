@@ -38,6 +38,6 @@ function decryptText() {
 function copyToClipboard() {
   let text = document.getElementById("outputText");
   text.select();
-  text.setSelectionRange(0, 99999); // Para dispositivos móveis
+  text.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(text.value);
 }
