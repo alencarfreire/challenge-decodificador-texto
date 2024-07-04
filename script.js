@@ -1,6 +1,6 @@
 let outputText = document.getElementById("outputText");
-let afterResult = document.querySelector(".after-result");
-let buttonCopy = document.querySelector(".button-copy");
+let afterResult = document.querySelector(".box-result-preview");
+let buttonCopy = document.querySelector(".box-result-preview-button-copy");
 let boxResult = document.querySelector(".box-result");
 
 function adjustStyle() {
